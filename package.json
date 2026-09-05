@@ -1,0 +1,9 @@
+{
+  "name": "tasa11",
+  "private": true,
+  "description": "TASA11 Equine Intelligence landing page",
+  "scripts": {
+    "start": "npx --yes serve site -l 4173 --no-clipboard",
+    "dev": "npx --yes serve site -l 4173 --no-clipboard"
+  }
+}
