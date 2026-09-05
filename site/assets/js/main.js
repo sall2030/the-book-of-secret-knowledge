@@ -27,9 +27,20 @@
     "red-team-x": "I am writing about Red Team X."
   };
 
+  var scrolled = false;
+  var scrollTick = false;
+
   function onScroll() {
-    if (!header) return;
-    header.classList.toggle("is-scrolled", window.scrollY > 8);
+    if (!header || scrollTick) return;
+    scrollTick = true;
+    window.requestAnimationFrame(function () {
+      var next = window.scrollY > 8;
+      if (next !== scrolled) {
+        scrolled = next;
+        header.classList.toggle("is-scrolled", scrolled);
+      }
+      scrollTick = false;
+    });
   }
 
   function closeMenu() {
