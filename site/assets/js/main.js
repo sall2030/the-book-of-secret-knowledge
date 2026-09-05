@@ -18,13 +18,17 @@
   };
 
   var horizonNotes = {
-    "race-prediction": "I am writing about Race Prediction.",
+    racing: "I am writing about Racing intelligence.",
+    stable: "I am writing about the Smart Digital Stable.",
     "smart-digital-stable": "I am writing about the Smart Digital Stable.",
+    bloodstock: "I am writing about Bloodstock intelligence.",
+    "red-team": "I am writing about Red Team X.",
+    "red-team-x": "I am writing about Red Team X.",
+    agents: "I am writing about Expert Agents.",
     "expert-agents": "I am writing about Expert Agents.",
-    commentary: "I am writing about Commentary Intelligence.",
-    bloodstock: "I am writing about Bloodstock / Sales Intelligence.",
-    "computer-vision": "I am writing about Computer Vision.",
-    "red-team-x": "I am writing about Red Team X."
+    commentary: "I am writing about Commentary intelligence.",
+    "race-prediction": "I am writing about Racing intelligence.",
+    "computer-vision": "I am writing about Computer Vision in the Stable."
   };
 
   var scrolled = false;
@@ -146,33 +150,26 @@
     });
   }
 
-  window.TASA11 = {
-    version: "1.0.0",
-    routes: {
-      home: "/",
-      contact: "/contact/",
-      ecosystem: "/#ecosystem",
-      stack: "/#stack",
-      proof: "/#proof",
-      horizons: "/#horizons",
-      redTeamX: "/#red-team-x",
-      vision: "/#vision"
+  window.TASA11 = Object.assign(
+    {
+      version: "1.1.0",
+      routes: {
+        home: "/",
+        contact: "/contact/",
+        chain: "/#chain",
+        proof: "/#proof",
+        doors: "/#doors",
+        stable: "/#stable",
+        lifecycle: "/#lifecycle",
+        redTeamX: "/#red-team-x",
+        vision: "/#vision",
+        racing: "/racing/",
+        bloodstock: "/bloodstock/",
+        redTeam: "/red-team/",
+        agents: "/agents/",
+        commentary: "/commentary/"
+      }
     },
-    horizons: [
-      "race-prediction",
-      "smart-digital-stable",
-      "expert-agents",
-      "commentary",
-      "bloodstock",
-      "computer-vision"
-    ],
-    intersections: [
-      "red-team-x",
-      "smart-digital-stable",
-      "expert-agent-marketplace",
-      "computer-vision",
-      "racing-intelligence",
-      "bloodstock-intelligence"
-    ]
-  };
+    window.TASA11_ECOSYSTEM || {}
+  );
 })();

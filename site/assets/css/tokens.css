@@ -67,6 +67,8 @@
   --mute-2: #7d7669;
   --line: rgba(201, 168, 106, 0.18);
   --line-strong: rgba(201, 168, 106, 0.38);
+  --rtx: #8c4a3c;
+  --rtx-line: rgba(140, 74, 60, 0.45);
   --ink: #070706;
   --serif: "Cormorant Garamond", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   --sans: "Outfit", "Avenir Next", "Segoe UI", sans-serif;

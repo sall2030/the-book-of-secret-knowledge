@@ -1,7 +1,7 @@
 {
   "name": "TASA11",
   "short_name": "TASA11",
-  "description": "Equine Intelligence ecosystem born from Saudi racing.",
+  "description": "A Saudi-born intelligence ecosystem built around horses, evidence, expertise and real-world learning.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
